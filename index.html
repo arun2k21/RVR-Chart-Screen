@@ -1,0 +1,186 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<div class="container-fluid bg-primary bg-gradient">
+    <div class="d-flex h-100 gap-1">
+        <div class="members p-2 col-4 h-100">
+            <div class="text-center fw-bold text-white py-2">Members</div>
+            <div class="card bg-primary-subtle members-card p-2 h-90 border border-secondary">
+                <div class="member border-bottom border-white p-2 cursor-pointer">
+                    <div class="d-flex">
+                        <div class="w-20 align-middle profile-pic">
+                            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" class="rounded-circle profile-picture">
+                        </div>
+                        <div class="w-50">
+                            <div class="person-name fw-bold text-white">John Doe</div>
+                            <div class="msg-prev text-white">Hello, Are you There?</div>
+                        </div>
+                        <div class="w-30 activity">
+                            <div class="text-center">
+                                <div class="time-stamp mb-1 text-white">Just Now</div   >
+                                <div><span class="batch bg-danger text-white">5</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="member border-bottom border-white p-2 cursor-pointer">
+                    <div class="d-flex">
+                        <div class="w-20 profile-pic">
+                            <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" class="rounded-circle profile-picture">
+                        </div>
+                        <div class="w-50">
+                            <div class="person-name fw-bold text-white">Danny Smith</div>
+                            <div class="msg-prev text-white">Lorem ipsum dolor</div>
+                        </div>
+                        <div class="w-30">
+                            <div class="text-center">
+                                <div class="time-stamp mb-1 text-white">Yesterday</div>
+                                <div><span class="batch bg-danger text-white visually-hidden">5</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-screen p-2 col-8">
+            <div class="card border-0 bg-transparent chat-card h-100 p-2">
+                <div class="h-80 chats">
+                    <a href="#bottom" class="d-none"></a>
+                   <div class="row mb-3">
+                    <div class="border-secondary">
+                        <div class="d-flex gap-3">
+                            <div><img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" class="rounded-circle profile-picture"></div>
+                            <div>
+                                <div class="card sent-message">
+                                    <div class="card-header text-white">John Doe</div>
+                                    <div class="card-body text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi non nam dicta repudiandae quod deleniti, eum velit molestias impedit quidem facere culpa dolorem temporibus necessitatibus vel maxime minima tempora modi.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="row mb-3">
+                    <div class="border-secondary">
+                        <div class="d-flex gap-3">
+                            <div>
+                                <div class="card received-message">
+                                    <div class="card-header text-white">Danny Smith</div>
+                                    <div class="card-body text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi non nam dicta repudiandae quod deleniti, eum velit molestias impedit quidem facere culpa dolorem temporibus necessitatibus vel maxime minima tempora modi.</div>
+                                </div>
+                            </div>
+                            <div><img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" class="rounded-circle profile-picture"></div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="row mb-3">
+                    <div class="border-secondary">
+                        <div class="d-flex gap-3">
+                            <div><img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" class="rounded-circle profile-picture"></div>
+                            <div>
+                                <div class="card sent-message">
+                                    <div class="card-header text-white">John Doe</div>
+                                    <div class="card-body text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi non nam dicta repudiandae quod deleniti, eum velit molestias impedit quidem facere culpa dolorem temporibus necessitatibus vel maxime minima tempora modi.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div id="bottom" class="d-none"></div>
+                </div>
+                <div class="h-20">
+                    <div class="h-100">
+                        <div class="text-white p-2"><label for="form-label">Message</label></div>
+                        <div class="d-flex border border-dark rounded-pill align-items-center justify-content-between form-control">
+                            <div class="col-10"><input type="text" class="border-0 w-100" id="message" placeholder="Enter your message"></div>
+                            <div class="col-2 text-end"><button class="btn btn-primary h-100 text-white rounded-pill">Send <span><i class="bi bi-send-fill"></i></span></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .container-fluid {
+        height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .cursor-pointer{
+        cursor: pointer;
+    }
+    .members-card,
+    .chat-card{
+        border-radius: 25px;
+    }
+    .batch{
+        font-size: 8px;
+        padding: 2px 6px;
+        border-radius: 2px;
+    }
+    .h-90{
+        height: 90%;
+    }
+    .h-10{
+        height: 10%;
+    }
+    .h-20{
+        height: 20%;
+    }
+    .h-80{
+        height: 80%;
+    }
+    .profile-picture{
+        height: 50px;
+        width: 50px;
+        border: 1px solid rgb(223, 223, 223);
+    }
+    .msg-prev{
+        font-size: 14px;
+    }
+    .chats{
+        overflow-y: auto;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    .bg-primary-subtle{
+        background: #3270ce !important;
+    }
+    .sent-message{
+        background: #3270ce !important;
+    }
+    .received-message{
+        background: #093679;
+    }
+    .bg-primary{
+        background: #144b9e !important;
+    }
+    .w-20{
+        width: 20%;
+    }
+    .w-30{
+        width: 30%;
+    }
+    .w-40{
+        width: 40%;
+    }
+    .w-
+    #message:focus{
+border: none;
+outline: none;
+    }
+    ::-webkit-scrollbar{
+    width: 1px;
+    }
+
+    @media (width < 500px) {
+        .profile-pic{
+            display: none;
+        }
+        .member .w-50{
+            width: 100%;
+        }
+        .activity{
+            display: none;
+        }
+    }
+</style>
